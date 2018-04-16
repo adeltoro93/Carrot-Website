@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+/* navigation bar  */
+nav {
+  background-color: #FFAD42;
+}
+nav ul.navbar {
+  display: inline-block;
+}
+ul.navbar li {
+  display: inline-block;
+}
+ul.navbar a {
+  color: #F7F7E2;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 100;
+  position: relative;
+  left:  380px;
+  bottom: 30px;
+  opacity: .9;
+  padding: 18px;
+}
+/* search bar */
+div.search input {
+    margin: 15px;
+    padding: 15px 20px;
+    position: absolute;
+    left: 953px;
+    background-color: #F0F0F0;
+    border-style: outset;
+    border-right-width: 5px;
+    border-bottom-width: 9px;
+}
+ i.fa.fa-search {
+  position: absolute;
+  left: 1150px;
+  top: 106px;
+  color: #C0C0C0;
+  font-size: 28px;
+}
+/* this is our carrot image  */
+div.carrot {
+    background-color: #F4FCFE;
+    display: block;
+    width: 100%;
+    height: 600px;
+    background-image: url(../img/carrotbg.PNG);
+    background-repeat: no-repeat;
+    background-position: 15% 35%;
+
+}
+div.carrot p{
+  display: block;
+  position: absolute;
+  top: 260px;
+  left: 660px;
+  font-size: 38px;
+  color: #F2B35C;
+  font-family: sans-serif;
+}
+p span {
+  color: #65C57E;
+}
+/* this creates the two click boxes  */
+li.get {
+  display: block;
+  position: absolute;
+  top: 500px;
+  left: 660px;
+  border: 15px solid #65C57E;
+  background-color: #65C57E;
+  padding: 5px 35px;
+}
+li.get h3 {
+  color: white;
+  font-weight: 100;
+  }
+  li.view {
+    display: block;
+    position: absolute;
+    top: 500px;
+    left: 900px;
+    border: 15px solid #FFAD42;
+    background-color: #FFAD42;
+    padding: 5px;
+  }
+  li.view h3 {
+    color: white;
+    font-weight: 100;
+  }
+  /* bototm section of website with 3 SM logos  */
+  footer {
+    background-color: #65C57E;
+    height: 100px;
+    text-align: center;
+  }
+  footer ul li {
+    display: inline-block;
+    padding-top: 29px;
+    word-spacing: 50px;
+}
+
+  footer a {
+    color: white;
+    font-size: 25px;
+  }
+  footer ul {
+    word-spacing: 35px;
+  }
