@@ -5,109 +5,182 @@
 /* navigation bar  */
 nav {
   background-color: #FFAD42;
+  width:100%;
+  background-image: url(../img/carrot.PNG);
+  background-repeat: no-repeat;
 }
 nav ul.navbar {
   display: inline-block;
+  width: 90%;
+  height: 90px;
+  text-align: right;
 }
 ul.navbar li {
   display: inline-block;
 }
 ul.navbar a {
-  color: #F7F7E2;
+
   text-decoration: none;
   font-size: 20px;
   font-family: sans-serif;
   font-weight: 100;
-  position: relative;
-  left:  380px;
-  bottom: 30px;
-  opacity: .9;
+  text-align: right;
+  width: 100%;
   padding: 18px;
+  padding-right: 15px;
 }
 /* search bar */
-div.search input {
+div.search {
+  text-align: right;
+  padding: 30px;
+  background-color: #F4FCFE
+}
+ div.search input {
     margin: 15px;
     padding: 15px 20px;
-    position: absolute;
-    left: 953px;
+    /* position: absolute; */
+    /* left: 953px; */
     background-color: #F0F0F0;
-    border-style: outset;
-    border-right-width: 5px;
-    border-bottom-width: 9px;
+
+    box-shadow: 10px 5px 5px orange;
 }
  i.fa.fa-search {
   position: absolute;
-  left: 1150px;
-  top: 106px;
+  right: 85px;
+  top: 150px;
   color: #C0C0C0;
   font-size: 28px;
 }
 /* this is our carrot image  */
-div.carrot {
-    background-color: #F4FCFE;
-    display: block;
-    width: 100%;
-    height: 600px;
-    background-image: url(../img/carrotbg.PNG);
-    background-repeat: no-repeat;
-    background-position: 15% 35%;
+div.middle {
+  background-color: #F4FCFE;
+}
+div.left {
+  width:49%;
+  display: inline-block;
+}
+div.left.carrot {
+  height: 350px;
+  background-image: url(../img/carrotbg.PNG);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 40% 10%;
+  background-blend-mode:normal;
 
 }
-div.carrot p{
-  display: block;
-  position: absolute;
-  top: 260px;
-  left: 660px;
-  font-size: 38px;
-  color: #F2B35C;
-  font-family: sans-serif;
+div.left.text p {
+  font-size: 40px;
+  text-align: center;
+  padding-bottom:50px;
+  color: #FFAD42;
 }
-p span {
+div.left.text span {
   color: #65C57E;
 }
-/* this creates the two click boxes  */
-li.get {
-  display: block;
-  position: absolute;
-  top: 500px;
-  left: 660px;
-  border: 15px solid #65C57E;
-  background-color: #65C57E;
-  padding: 5px 35px;
+div .left.text button{
+  width: 200px;
+  padding: 15px;
+  text-align: center;
+  margin-left: 80px;
+  border: none;
+  margin-bottom: 30px;
 }
-li.get h3 {
+button.get {
+  background-color: #65C57E;
   color: white;
+  font-size: 19px;
   font-weight: 100;
-  }
-  li.view {
-    display: block;
-    position: absolute;
-    top: 500px;
-    left: 900px;
-    border: 15px solid #FFAD42;
-    background-color: #FFAD42;
-    padding: 5px;
-  }
-  li.view h3 {
-    color: white;
-    font-weight: 100;
-  }
-  /* bototm section of website with 3 SM logos  */
-  footer {
-    background-color: #65C57E;
-    height: 100px;
-    text-align: center;
-  }
-  footer ul li {
-    display: inline-block;
-    padding-top: 29px;
-    word-spacing: 50px;
+  font-family: sans-serif;
+}
+button.view {
+  background-color: #FFAD42;
+  color: white;
+  font-size: 19px;
+  font-weight: 100;
+  font-family: sans-serif;
+}
+footer {
+  background-color: #65C57E;
+  height: 90px;
+  text-align: center;
+}
+ul li  {
+  display: inline-block;
+  padding-top: 40px;
+
+}
+ul li a {
+  color: white;
+  font-size: 25px;
+
+}
+footer ul {
+  word-spacing: 20px;
+}
+@media (max-width: 936px) {
+ul.navbar a {
+font-size: 15px;
+}
+div.left.text p{
+  font-size: 30px;
+}
+@media (max-width: 800px) {
+nav ul.navbar {
+  width: 100%;
+}
+}
+@media ( max-width: 700px){
+ ul.navbar li{
+  display: block;
+  width: 100%;
+  text-decoration: underline;
+}
+nav {
+  background-position: 0 46%;
+
+}
+i.fa.fa-search{
+  position: absolute;
+  top: 350px;
+  left: 10px
+
+}
+div.left.text p{
+  font-size: 25px;
 }
 
-  footer a {
-    color: white;
-    font-size: 25px;
+@media ( max-width: 580px){
+div .left.text button{
+  margin: 15px 22px;
+}
+div.left.text p{
+  font-size: 21px;
+}
+
+@media ( max-width: 470px){
+  div.search {
+    text-align: center;
   }
-  footer ul {
-    word-spacing: 35px;
+div .left.text button {
+width: 75%;
+}
+div.left.text p{
+  font-size: 18px;
+}
+i.fa.fa-search{
+  position: absolute;
+  top: 350px;
+  left: 250px
+}
+@media ( max-width: 405px){
+  div.search input {
+    width: 70%;
   }
+  div.left.text p{
+  font-size: 15px;
+}
+@media ( max-width: 342px){
+  i.fa.fa-search{
+    position: absolute;
+    top: 350px;
+    left: 200px
