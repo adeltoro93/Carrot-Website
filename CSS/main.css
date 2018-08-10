@@ -29,6 +29,11 @@ ul.navbar a {
   padding: 18px;
   padding-right: 15px;
 }
+ul.navbar a:hover{
+  border: 5px solid;
+  background: #F18318;
+  transition: .9s ease;
+}
 /* search bar */
 div.search {
   text-align: right;
@@ -98,6 +103,16 @@ button.view {
   font-size: 19px;
   font-weight: 100;
   font-family: sans-serif;
+}
+button.view:hover{
+  background: radial-gradient(circle, green, orange, green);
+  font-size: 22px;
+  transition: .7s ease;
+}
+button.get:hover{
+  background: radial-gradient(circle, orange, red, orange);
+  font-size: 22px;
+  transition: .7s ease;
 }
 footer {
   background-color: #65C57E;
